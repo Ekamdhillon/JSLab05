@@ -1,0 +1,191 @@
+/* Global reset-ish */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* THEME CLASSES */
+body.theme-light {
+    background-color: #f7f2ff; /* very light purple */
+    color: #2a103c;            /* deep purple text */
+}
+
+body.theme-dark {
+    background-color: #1b0626; /* dark purple */
+    color: #f8f2ff;            /* light text */
+}
+
+/* HEADER + NAV */
+header {
+    background-color: #6a1fb0;
+    color: white;
+    padding: 15px 0;
+}
+
+body.theme-dark header {
+    background-color: #3b0a63;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* MAIN CONTENT */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+body.theme-dark main {
+    background-color: #2a103c;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.50);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #4b147a;
+}
+
+body.theme-dark h1,
+body.theme-dark h2 {
+    color: #e6d7ff;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* FORM ELEMENTS */
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"] {
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 1px solid #c7a7ff;
+    font-size: 0.95rem;
+}
+
+body.theme-dark .form-group input[type="text"],
+body.theme-dark .form-group input[type="email"] {
+    background-color: #3b184f;
+    border-color: #e0c4ff;
+    color: #ffffff;
+}
+
+/* RADIO GROUPS */
+.radio-group {
+    margin-bottom: 15px;
+}
+
+.radio-group legend,
+.radio-group span {
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.radio-group label {
+    margin-right: 15px;
+}
+
+/* BUTTONS */
+button,
+input[type="submit"],
+input[type="reset"] {
+    padding: 8px 20px;
+    border-radius: 6px;
+    border: none;
+    background: linear-gradient(90deg, #7b2fb8, #4a147a);
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background: linear-gradient(90deg, #5c228a, #300b53);
+}
+
+/* FORM ACTIONS */
+.form-actions {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+/* OUTPUT AREA */
+#output {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f0e6ff;
+    min-height: 40px;
+}
+
+body.theme-dark #output {
+    background-color: #3b184f;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 15px 10px 25px;
+    font-size: 0.9rem;
+    color: #4d2f69;
+}
+
+body.theme-dark footer {
+    color: #f2e7ff;
+}
+
+.theme-switcher {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.theme-switcher button {
+    font-size: 0.8rem;
+    padding: 6px 14px;
+}
+

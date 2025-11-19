@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Excel Functions - JS Lab</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="theme-light">
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="excel.html">Excel</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h1>Excel Functions Simulator</h1>
+    <p>
+        Type your numbers separated by spaces (for example:
+        <code>23 67 98 90 56</code>) and choose one Excel function.
+    </p>
+
+    <form id="main-form" name="mainform">
+        <div class="form-group">
+            <label for="numbers">Enter your numbers separated by spaces:</label>
+            <input type="text" id="numbers" name="numbers" placeholder="23 67 98 90 56">
+        </div>
+
+        <fieldset class="radio-group">
+            <legend>Choose a function:</legend>
+
+            <label>
+                <input type="radio" name="excel" id="sum" value="sum" checked>
+                AutoSum
+            </label>
+
+            <label>
+                <input type="radio" name="excel" id="avg" value="avg">
+                Average
+            </label>
+
+            <label>
+                <input type="radio" name="excel" id="max" value="max">
+                Max
+            </label>
+
+            <label>
+                <input type="radio" name="excel" id="min" value="min">
+                Min
+            </label>
+        </fieldset>
+
+        <div class="form-actions">
+            <button type="button" id="calc-btn">Calculate</button>
+        </div>
+    </form>
+
+    <!-- Result placeholder -->
+    <div id="output">
+        Result will be printed here.
+    </div>
+</main>
+
+<footer>
+    <p><strong>Ekam Dhillon – AWP Lab 5</strong></p>
+
+    <div class="theme-switcher">
+        <button type="button" id="light-theme-btn">Light Theme</button>
+        <button type="button" id="dark-theme-btn">Purple Theme</button>
+    </div>
+
+    <p>ILAC &amp; EFREI - HTML, CSS, and JavaScript Assignment</p>
+</footer>
+
+<!-- Script link at the end -->
+<script src="js/script.js"></script>
+</body>
+</html>
